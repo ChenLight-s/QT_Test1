@@ -54,6 +54,7 @@ Widget::Widget(QWidget *parent)
 
     QPushButton *closeWindown = new QPushButton("关闭",this);
     closeWindown->adjustSize();
+    closeWindown->move(btn0->x()+100,btn0->y()+100);
     closeWindown->setStyleSheet(
 "QPushButton{background-color:gray; border-radius: 10px; border-style: outset;}" // 按键本色
 "QPushButton:hover{background-color:#ed2f6a;}"  // 鼠标停放时的色彩
@@ -65,7 +66,8 @@ Widget::Widget(QWidget *parent)
     //void(Student:: *btnMove1) (QPushButton *)= &Student::btnMove;
     //QPushButton
     //connect(btn0,&QPushButton::whatsThis,st,btnMove1);
-    connect(btn0,&QPushButton::clicked,this,[=](){st->btnMove(closeWindown);});
+    connect(btn0,&QPushButton::clicked,st,[=](){st->btnMove(closeWindown);});
+    connect(closeWindown,&QPushButton::clicked,st,[=](){st->btnMove1(closeWindown);});
     //closeWindown->setDown(true);
     //emit yg->hungry(closeWindown);
     if(closeWindown->isDown())

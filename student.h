@@ -15,6 +15,7 @@ public:
     void treat();
     void treat(QString foodName);
     void btnMove(QPushButton *Btn);
+    void btnMove1(QPushButton *btn);
 signals:
 
 };

@@ -16,6 +16,11 @@ void Student::treat(QString foodName)
 }
 void Student::btnMove(QPushButton *btn)
 {
-    btn->move(btn->x()+10,btn->y()+8);
+    btn->move(btn->x()-50,btn->y()+100);
+    qDebug()<<"x，y坐标加10";
+}
+void Student::btnMove1(QPushButton *btn)
+{
+    btn->move(btn->x()+50,btn->y()-100);
     qDebug()<<"x，y坐标加10";
 }
