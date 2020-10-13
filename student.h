@@ -14,8 +14,8 @@ public:
     //可以有参数和重载
     void treat();
     void treat(QString foodName);
-    void btnMove(QPushButton *Btn);
-    void btnMove1(QPushButton *btn);
+    void btnMove(QPushButton *Btn,int x,int y);
+    void btnMove1(QPushButton *btn,int x,int y);
 signals:
 
 };

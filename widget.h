@@ -7,7 +7,8 @@
 #include "student.h"
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class Widget; }
+namespace Ui { class Widget; class controlPlatform;}
+//namespace Ui { class controlPlatform; }
 QT_END_NAMESPACE
 
 class Widget : public QWidget
@@ -24,5 +25,24 @@ private:
     Student *st;
     void classIsOver();
     void classIsOver1();
+    void controlPlatform(QPushButton *btn,QWidget *wid);
+};
+
+class controlPlatform : public QWidget
+{
+    Q_OBJECT
+
+public:
+    controlPlatform(QWidget *parent = nullptr);
+    ~controlPlatform();
+
+private:
+  //  Ui::controlPlatform *ui;
+//    Ui::Widget *ui;
+//    Teacher *yg;
+//    Student *st;
+//    void classIsOver();
+//    void classIsOver1();
+//    void controlPlatform(bool state);
 };
 #endif // WIDGET_H

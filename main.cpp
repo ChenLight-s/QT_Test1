@@ -8,9 +8,9 @@ int main(int argc, char *argv[])
     Widget w;
     w.show();
 //    Widget test;
-//    if(0)
-//        test.show();
-
+//    controlPlatform hd;
+//    hd.show();
+//    hd.move(100,100);
 
     return a.exec();
 }
